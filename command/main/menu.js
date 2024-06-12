@@ -46,11 +46,12 @@ module.exports = {
 	    category[cteg].push(info);
          }
         }
-                        teks = global.footer + " *[ Beta✓ ]*\n\n"
+                        teks = global.footer + "Abracadabra, si pesulap yang siap membuat hatimu terpikat! Halo semuanya, it's me *Fritzy*!\n\n"
 		  	teks += monospace(" ❏ Library : Baileys-MD") + "\n"
 		  	teks += monospace(" ❏ Author : " + "@" + config.owner[0].split("@")[0] )+ "\n"
 		  	teks += monospace(" ❏ Prefix : [ " + pref + " ]") + "\n\n"
-		  	teks += monospace(`Halo, @${sender.split("@")[0]} Here my Command`) +`\n\n`;
+		  	teks += monospace(`Hai kak @${sender.split("@")[0]} Here my Command`) +`\n\n`
+			teks += monospace("> Powered by AkoOffice") + "\n\n";
 		  	teks += `*乂 ${q.toUpperCase()}*\n`
 		  	nganu = category[q]
 		  	if(nganu == undefined) throw "Category tidak ditemukan!!"
@@ -73,14 +74,14 @@ module.exports = {
                 category[cteg].push(info);
           }
         }
-			menu = global.footer + " *[ Beta✓ ]*\n\n"
+			menu = global.footer + "Abracadabra, si pesulap yang siap membuat hatimu terpikat! Halo semuanya, it's me *Fritzy*!\n\n"
 			menu += monospace(" ❏ Library : Baileys-MD") + "\n"
 			menu += monospace(" ❏ Author : " + "@" + config.owner[0].split("@")[0] )+ "\n"
 			menu += monospace(" ❏ Prefix : [ " + pref + " ]") + "\n"
 			menu += monospace(" ❏ Date : " + date) + "\n"
 			menu += monospace(" ❏ Time : " + time) + "\n"
 		        menu += monospace(" ❏ Speed :  " + processTime(msg.messageTimestamp, moment()) + " Seccond") + "\n\n"
-		        menu += "*This Bot script is : https://github.com/xzeera-id/Senkuu-MD*\n_Tanda ❌ berarti Error atau Fitur sedang Dinonaktifkan oleh Owner!!_\n\n"
+		        menu += "*> Powered by AkoOffice*\n_Tanda ❌ berarti Error atau Fitur sedang Dinonaktifkan oleh Owner!!_\n\n"
 			menu += monospace(`Halo, @${sender.split("@")[0]} Here my Command List`) +`\n\n`;
 			const keys = Object.keys(category)
 			menu += "*乂 CATEGORY MENU*\n"
@@ -99,7 +100,7 @@ module.exports = {
            { buttonId: `.ping`,buttonText:{displayText: 'Speed'}, type : 1}
            ]
         const buttonMessage = {
-           image: {url: "https://telegra.ph/file/642a95448d0d2d4750a37.jpg"},
+           image: {url: "https://telegra.ph/file/5185189ccd4de03038fb0.jpg"},
            caption: menu,
            footer: "Bot Masih dalam tahap Perkembangan",
            buttons: buttons,
